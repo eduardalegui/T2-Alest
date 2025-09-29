@@ -10,3 +10,19 @@ Começando do início
 Começando do fim (cauda):
 
 3d 6f 67 43 4b 51 30 4d 6c 51 30 4d 6c 63 58 51 52 5a 55 51 54 46 30 62 54 52 55 54 59 74 55 53 33 52 7a 51 4f 6c 33 61 45 31 55 4d 4a 52 55 54 35 39 32 5a 46 31 44 63 6c 39 31 5a 6d 55 48 64 30 31 54 65 79 52 6e 62 6c 39 44 62 7a 45 44 64 32 63 33 4d 6d 46 54 4d 47 4a 54 4a 6e 5a 6b 4d 6c 4d 6e 4e 78 45 53 4e 6c 42 54 4d 68 45 6a 4d 31 67 7a 4d 33 45 6a 4c 78
+
+
+Métodos essenciais para a estrutura de dados Deque:
+
+1.addFirst() - Adiciona o elemento especificado no início da deque. Lança uma exceção se a deque estiver cheia.
+2.addLast() - Adiciona o elemento especificado ao final da deque. Lança uma exceção se a deque estiver cheia.
+3.offerFirst() - Adiciona o elemento especificado no início da deque. Retorna falsese a deque estiver cheia.
+4.offerLast() - Adiciona o elemento especificado ao final da deque. Retorna falsese a deque estiver cheia.
+5.getFirst() - Retorna o primeiro elemento da deque. Lança uma exceção se a deque estiver vazia.
+6.getLast() - Retorna o último elemento da deque. Lança uma exceção se a deque estiver vazia.
+7.peekFirst() - Retorna o primeiro elemento da deque. Retorna nullse a deque estiver vazia.
+8.peekLast() - Retorna o último elemento da deque. Retorna nullse a deque estiver vazia.
+9.removeFirst() - Retorna e remove o primeiro elemento da deque. Lança uma exceção se a deque estiver vazia.
+10.removeLast() - Retorna e remove o último elemento da deque. Lança uma exceção se a deque estiver vazia.
+11.pollFirst() - Retorna e remove o primeiro elemento da deque. Retorna nullse a deque estiver vazia.
+12.pollLast() - Retorna e remove o último elemento da deque. Retorna nullse a deque estiver vazia.
