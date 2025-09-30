@@ -5,3 +5,5 @@ O método deverá adicionar um elemento no início da deque, empurrando os outro
 Lança uma exceção se a deque estiver cheia.
 
 Dica: fazer i + 1 para as posições e verificar se o Array não vai lotar
+
+teste
