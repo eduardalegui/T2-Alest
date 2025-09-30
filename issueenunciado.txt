@@ -1,0 +1,7 @@
+---- #2 Adicionar um elemento na última posição ----
+
+Adiciona o elemento especificado ao final da deque;
+
+Lança uma exceção se a deque estiver cheia;
+
+Dica: fazer uma verificação para ver qual o último espaço vazio do Array.
