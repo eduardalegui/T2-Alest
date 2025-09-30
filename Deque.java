@@ -1,9 +1,11 @@
-import java.util.ArrayList;
-
-public class Deque<T>{
-    private ArrayList<T> deque;
+public class Deque<T> {
+    private T[] elementos; // Array que armazena os dados
+    private int tamanho; // Quantidade de elementos na lista
 
     public Deque() {
-        deque = new ArrayList<>();
+        elementos = (T[]) new Object[10];
+        tamanho = 0;
     }
+
+    
 }
