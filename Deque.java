@@ -5,7 +5,7 @@ public class Deque<T> {
 
     @SuppressWarnings("unchecked")
     public Deque() {
-        elementos = (T[]) new Object[10];
+        elementos = (T[]) new Object[145];
         tamanho = 0;
     }
 
