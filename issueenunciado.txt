@@ -1,0 +1,7 @@
+---- #3 Propor inserção de elemento na primeira posição ----
+
+Tenta adicionar o elemento especificado no início da deque;
+
+Retorna false se a deque estiver cheia;
+
+Dica: Utilizar Array e verificação para ver se a deque está cheia.
