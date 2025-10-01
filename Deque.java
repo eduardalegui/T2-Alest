@@ -1,3 +1,4 @@
+import java.util.Arrays;
 
 public class Deque<T> {
     private T[] elementos; // Array que armazena os dados
@@ -14,8 +15,30 @@ public class Deque<T> {
         
         try{
             int ultimaPosicao = tamanho - 1;
+           @SuppressWarnings("unchecked")
+    public T removerPrimeiroElemento(){
+        if (tamanho == 0) {
+            throw new IllegalArgumentException("Array vazio");
+        }
+        T elementoRemovido = elementos[0];
 
-            ultimoElemento = elementos[ultimaPosicao];
+        T[] novoArray = Arrays.copyOfRange(elementos, 1, elementos.length);
+        elementos = novoArray;
+        tamanho--;
+
+        return elementoRemovido;
+    }
+}
+/* Não sei se a melhor abortagem é essa, que remove completamente, ou apenas nullificar 
+o primeiro elemento, como em: (sem contar o lançamento de excessão)
+
+T elementoRemovido = elementos[0];
+elementos[0] = null;
+tamanho--;
+return elementoRemovido;
+
+*/
+    ultimoElemento = elementos[ultimaPosicao];
         }
         catch(ArrayIndexOutOfBoundsException e){
             System.out.println("Erro: " + e.getMessage() + ". A deque está vazia.");
