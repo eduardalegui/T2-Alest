@@ -9,7 +9,7 @@ public class Deque<T> {
         tamanho = 0;
     }
 
-    public T removerUltimoElemento() {
+    public T removeLast() {
         T t = null;
         try {
             t = elementos[tamanho - 1];
