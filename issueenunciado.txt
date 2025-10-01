@@ -1,0 +1,7 @@
+---- #4 Propor inserção de elemento na última posição ----
+
+Tenta adicionar o elemento especificado ao final da deque;
+
+Retorna false se a deque estiver cheia;
+
+Dica: Utilizar Array e verificação para ver se a deque está cheia.
