@@ -9,4 +9,16 @@ public class Deque<T> {
         tamanho = 0;
     }
 
+    public boolean InsercaoPrimeiraPosisao(T dado) {
+        if(tamanho == 145) {
+            return false;
+        }
+        for(int i = 0; i <= tamanho; i++) {
+            T d = elementos[i];
+            elementos[0] = dado;
+            elementos[i + 1] = d;
+        }
+        tamanho++;
+        return true;
+    }
 }
