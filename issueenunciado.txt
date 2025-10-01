@@ -1,0 +1,7 @@
+---- #6 Pegar o último elemento da deque ----
+
+Retorna o último elemento da deque;
+
+Lança uma exceção se a deque estiver vazia;
+
+Dica: utilizar um Array para pegar a última posição e verificar se ela está vazia.
