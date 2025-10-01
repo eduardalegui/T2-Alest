@@ -9,4 +9,11 @@ public class Deque<T> {
         tamanho = 0;
     }
 
+    public T getFirst() {
+        if(tamanho == 0) {
+            throw new IllegalArgumentException("Array está vazio");
+        }
+        return elementos[0];
+    }
+
 }
