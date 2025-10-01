@@ -9,4 +9,21 @@ public class Deque<T> {
         tamanho = 0;
     }
 
+     public T obterERemoverPrimeiro() {
+        if (tamanho == 0) {
+            return null;
+        }
+
+        T primeiro = elementos[0];
+
+        for (int i = 1; i < tamanho; i++) {
+            elementos[i - 1] = elementos[i];
+        }
+
+        elementos[tamanho - 1] = null;
+
+        tamanho--;
+
+        return primeiro;
+    }
 }
