@@ -1,7 +1,0 @@
----- #10 Remover último elemento da deque ----
-
-Retorna e remove o último elemento da deque;
-
-Lança uma exceção se a deque estiver vazia;
-
-Dica: Utilizar Array e verificar se a deque está vazia
