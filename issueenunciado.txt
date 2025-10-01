@@ -1,7 +1,0 @@
----- #7 Visualizar o primeiro elemento da deque ----
-
-Retorna o primeiro elemento da deque;
-
-Retorna null se a deque estiver vazia;
-
-Dica: Utilizar Array e verificação para ver se a deque está vazia.
