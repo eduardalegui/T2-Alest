@@ -22,7 +22,21 @@ public class Deque<T> {
         }
         T elementoRemovido = elementos[0];
 
-        T[] novoArray = Arrays.copyOfRange(elementos, 1, elementos.length);
+      public T removeLast() {
+        T t = null;
+        try {
+            t = elementos[tamanho - 1];
+        } catch(Exception e) {
+            System.out.println("O array está vazio");
+            System.out.println("Erro: " + e.getMessage());
+        }
+        elementos[tamanho - 1] = null;
+        tamanho--;
+        return t;
+    }
+}
+          
+           T[] novoArray = Arrays.copyOfRange(elementos, 1, elementos.length);
         elementos = novoArray;
         tamanho--;
 
