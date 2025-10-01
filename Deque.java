@@ -8,7 +8,6 @@ public class Deque<T> {
         elementos = (T[]) new Object[145];
         tamanho = 0;
     }
-
     public void inserirNaPrimeiraPosicao(T dado){
         if(tamanho == 145){
             throw new ArrayIndexOutOfBoundsException("Array está cheia");
@@ -20,4 +19,15 @@ public class Deque<T> {
         }
         tamanho++;
     }
+  
+      public void addLast(T elemento) {
+        
+        if (tamanho == elementos.length) {
+            throw new IllegalStateException("Deque está cheia!");
+        }
+        
+        elementos[tamanho] = elemento;
+        tamanho++;
+    }
+
 }
