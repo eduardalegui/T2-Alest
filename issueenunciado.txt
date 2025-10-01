@@ -1,7 +1,0 @@
----- #9 Remover primeiro elemento da deque ----
-
-Retorna e remove o primeiro elemento da deque;
-
-Lança uma exceção se a deque estiver vazia;
-
-Dica: Utilizar o Array e verificar se a deque está vazia.
