@@ -1,0 +1,7 @@
+---- #8 Visualizar o último elemento da deque ----
+
+Retorna o último elemento da deque;
+
+Retorna null se a deque estiver vazia;
+
+Dica: Utilizar o Array e verificar se a deque está vazia.
