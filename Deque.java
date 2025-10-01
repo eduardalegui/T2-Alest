@@ -9,4 +9,14 @@ public class Deque<T> {
         tamanho = 0;
     }
 
+    public void addLast(T elemento) {
+        
+        if (tamanho == elementos.length) {
+            throw new IllegalStateException("Deque está cheia!");
+        }
+        
+        elementos[tamanho] = elemento;
+        tamanho++;
+    }
+
 }
