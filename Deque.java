@@ -8,7 +8,16 @@ public class Deque<T> {
         elementos = (T[]) new Object[145];
         tamanho = 0;
     }
-    public void inserirNaPrimeiraPosicao(T dado){
+  
+  
+    public T visualizarPrimeiroElemento() {
+        if (tamanho == 0) {
+            throw new IllegalStateException("Deque vazio");
+        }
+        return elementos[0];
+    }
+  
+   public void inserirNaPrimeiraPosicao(T dado){
         if(tamanho == 145){
             throw new ArrayIndexOutOfBoundsException("Array está cheia");
         }
@@ -49,4 +58,3 @@ public class Deque<T> {
         }
         return elementos[0];
     }
-}

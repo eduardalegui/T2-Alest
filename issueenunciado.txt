@@ -1,7 +1,0 @@
----- #5 Pegar o primeiro elemento da deque ----
-
-Retorna o primeiro elemento da deque;
-
-Lança uma exceção se a deque estiver vazia;
-
-Dica: Utilizar um Array para pegar a primeira posição e verificar se a deque está vazia.
