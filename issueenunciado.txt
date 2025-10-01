@@ -1,0 +1,7 @@
+---- #12 Obter e remover último ----
+
+Retorna e remove o último elemento da deque;
+
+Retorna null se a deque estiver vazia;
+
+Dica: Utilizar o Array e verificar se a deque está vazia
