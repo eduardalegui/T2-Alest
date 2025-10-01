@@ -29,8 +29,8 @@ public class Deque<T> {
         elementos[tamanho] = elemento;
         tamanho++;
     }
-
-    public boolean InsercaoPrimeiraPosisao(T dado) {
+  
+      public boolean InsercaoPrimeiraPosisao(T dado) {
         if(tamanho == 145) {
             return false;
         }
@@ -41,5 +41,12 @@ public class Deque<T> {
         }
         tamanho++;
         return true;
+    }
+  
+    public T getFirst() {
+        if(tamanho == 0) {
+            throw new IllegalArgumentException("Array está vazio");
+        }
+        return elementos[0];
     }
 }
