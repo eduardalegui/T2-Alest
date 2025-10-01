@@ -10,6 +10,14 @@ public class Deque<T> {
         tamanho = 0;    
     }
 
+    public T[] getElementos() {
+        return this.elementos;
+    }
+
+    public int getTamanho() {
+        return this.tamanho;
+    }
+
     public T pollLast(){
         if(tamanho == 0){
             return null;
@@ -49,7 +57,7 @@ public class Deque<T> {
         tamanho++;
     }
   
-    public boolean InsercaoPrimeiraPosisao(T dado) {
+    public boolean insercaoPrimeiraPosisao(T dado) {
         if(tamanho == 145) {
             return false;
         }
@@ -128,15 +136,11 @@ public class Deque<T> {
         return ultimoElemento;
     }
 
-    public boolean insercaoNaPrimeiraPosicao(T dado) {
+    public boolean insercaoNaUltimaPosicao(T dado) {
         if(tamanho == 145) {
             return false;
         }
-        for(int i = 0; i <= tamanho; i++) {
-            T d = elementos[i];
-            elementos[0] = dado;
-            elementos[i + 1] = d;
-        }
+        elementos[tamanho] = dado;
         tamanho++;
         return true;
     }
