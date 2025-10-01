@@ -9,4 +9,19 @@ public class Deque<T> {
         tamanho = 0;
     }
 
-}
+    public T retornaUltimoElemento(){
+        T ultimoElemento = null;
+        
+        try{
+            int ultimaPosicao = tamanho - 1;
+
+            ultimoElemento = elementos[ultimaPosicao];
+        }
+        catch(ArrayIndexOutOfBoundsException e){
+            System.out.println("Erro: " + e.getMessage() + ". A deque está vazia.");
+        }
+
+        return ultimoElemento;
+    }
+
+} 
