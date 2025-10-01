@@ -9,4 +9,11 @@ public class Deque<T> {
         tamanho = 0;
     }
 
+    public T visualizarPrimeiroElemento() {
+        if (tamanho == 0) {
+            throw new IllegalStateException("Deque vazio");
+        }
+        return elementos[0];
+    }
+
 }
