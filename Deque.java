@@ -153,4 +153,20 @@ public class Deque<T> {
             return elementos[tamanho - 1];
         }
     }
+
+    public static void reverterLista(String[] cauda) {
+        int inicio = 0;
+        int fim = cauda.length - 1;
+
+        while (inicio < fim) {
+            String temp = cauda[inicio];
+            cauda[inicio] = cauda[fim];
+            cauda[fim] = temp;
+
+            inicio++;
+            fim--;
+        }
+    }
+
+
 }
